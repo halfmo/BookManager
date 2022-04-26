@@ -1,10 +1,16 @@
 package book.manager.controller.page;
 
 
+import book.manager.entity.AuthUser;
 import book.manager.mapper.UserMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @author half_m
@@ -19,8 +25,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/page/auth")
 public class AuthPageController {
 
-  @Mapper
-  UserMapper mapper;
+//  @Mapper
+//  UserMapper mapper;
+
+//  @RequestMapping("/index")
+//  public String index() {
+//    return "index";
+//  }
 
   //访问时是一定登录成功@SessionAttribute(value = "user",required = false) AuthUser user ,
 //  @RequestMapping("/index")

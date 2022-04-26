@@ -26,12 +26,12 @@
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="ad-auth-img">
-                        <img src="static/picture/auth-img1.png" alt="">
+                        <img th:src="@{/static/picture/auth-img1.png}" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="ad-auth-content">
-                        <form action="api/auth/login" method="post">
+                        <form th:action="@{/api/auth/login}" method="post">
 
                             <h2><span class="primary">Hello,</span>Welcome!</h2>
                             <p>Please Enter Your Details Below to Continue</p>
