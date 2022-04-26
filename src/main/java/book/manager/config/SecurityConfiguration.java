@@ -138,9 +138,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     AuthUser user = mapper.getPasswordByUsername(authentication.getName());
     session.setAttribute("user", user);
     if (user.getRole().equals("admin")) {
-      httpServletResponse.sendRedirect("/bookManager/index");
+      httpServletResponse.sendRedirect("/bookManager/page/admin/index");
     }else {
-      httpServletResponse.sendRedirect("/bookManager/index");
+      httpServletResponse.sendRedirect("/bookManager/page/user/index");
     }
 
   }
