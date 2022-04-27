@@ -18,6 +18,10 @@ import javax.annotation.Resource;
  * @Description TODO
  * @date 2022/4/24 15:02
  */
+
+/**
+ * 无用
+ */
 public class UserAuthServiceImpl implements UserDetailsService {
 
   @Resource
