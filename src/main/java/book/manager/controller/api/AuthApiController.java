@@ -13,13 +13,13 @@ import java.awt.image.AreaAveragingScaleFilter;
  * @author half_m
  * @version 1.0
  * @Package book.manager.controller
- * @Classname AuthController
+ * @Classname AuthApiController
  * @Description TODO
  * @date 2022/4/21 17:47
  */
 @Controller
 @RequestMapping("/api/auth")
-public class AuthController {
+public class AuthApiController {
 
   @Resource
   AuthService service;

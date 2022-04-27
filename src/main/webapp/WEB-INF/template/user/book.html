@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="zxx" xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
@@ -25,35 +27,35 @@
 </head>
 
 <body>
-	<div class="loader">
-	  <div class="spinner">
-		<img src="static/picture/loader.gif" alt="">
-	  </div> 
-	</div>
-    <!-- Main Body -->
+<div class="loader">
+    <div class="spinner">
+        <img th:src="@{/static/picture/loader.gif}" alt="">
+    </div>
+</div>
+<!-- Main Body -->
+<div class="page-wrapper">
+    <div th:replace="template.html::title"></div>
+    <div th:replace="template.html::aside"></div>
     <div class="page-wrapper">
-        <div th:replace="template.html::title"></div>
-        <div th:replace="template.html::aside"></div>
-        <div class="page-wrapper">
-            <div class="main-content">
-                <!-- Page Title Start -->
+        <div class="main-content">
+            <!-- Page Title Start -->
 
-            </div>
         </div>
     </div>
+</div>
 
 
-    <!-- Script Start -->
-    <script th:src="@{/static/js/jquery.min.js}"></script>
-    <script th:src="@{/static/js/popper.min.js}"></script>
-    <script th:src="@{/static/js/bootstrap.min.js}"></script>
-    <script th:src="@{/static/js/swiper.min.js}"></script>
-    <script th:src="@{/static/js/apexcharts.min.js}"></script>
-    <script th:src="@{/static/js/control-chart-apexcharts.js}"></script>
-    <!-- Page Specific -->
-    <script th:src="@{/static/js/nice-select.min.js}"></script>
-    <!-- Custom Script -->
-    <script th:src="@{/static/js/custom.js}"></script>
+<!-- Script Start -->
+<script th:src="@{/static/js/jquery.min.js}"></script>
+<script th:src="@{/static/js/popper.min.js}"></script>
+<script th:src="@{/static/js/bootstrap.min.js}"></script>
+<script th:src="@{/static/js/swiper.min.js}"></script>
+<script th:src="@{/static/js/apexcharts.min.js}"></script>
+<script th:src="@{/static/js/control-chart-apexcharts.js}"></script>
+<!-- Page Specific -->
+<script th:src="@{/static/js/nice-select.min.js}"></script>
+<!-- Custom Script -->
+<script th:src="@{/static/js/custom.js}"></script>
 </body>
 
 </html>
